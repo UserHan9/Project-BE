@@ -23,6 +23,7 @@ class RoleAndUserSeeder extends Seeder
         $admin = User::create([
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
+            'nisn'=>'123456789',
             'password' => bcrypt('password') 
         ]);
         $admin->assignRole($adminRole);
@@ -31,6 +32,7 @@ class RoleAndUserSeeder extends Seeder
         $user = User::create([
             'name' => 'User',
             'email' => 'user@gmail.com',
+            'nisn' => '1234578',
             'password' => bcrypt('password') 
         ]);
         $admin->assignRole($adminRole);
